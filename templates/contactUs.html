@@ -1,0 +1,74 @@
+
+{% include "header.html" %}
+
+<nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand" href= "{{ url_for('home') }} ">
+        Marketing </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href=" {{ url_for('home') }} "  data-original-title="Home Page" rel="nofollow">
+            <i class="fa fa-home"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href=" {{ url_for('contact') }} "  data-original-title="Contact us" rel="nofollow">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <body>
+    <div class="page-header header-filter purple-filter" data-parallax="true" style="background-image: url('../static/assets/img/Typewriter.jpg');">
+      <div class="container">
+              <h1 style="text-align: center; font-family: Arial; font-size: 80px;">Contact Page</h1>
+        </div>
+      </div>
+
+    <hr>
+    <div class="main main-raised">
+     <div class="contact-content">
+      <div class="container">
+        <div class="space-30"></div>
+
+        </div>
+        <h2 style="text-align: center;" ><strong>Send us a message</strong></h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="description">We'd love to read your feedback and suggestions.<br><br>
+            </p>
+            <form role="form" id="contact-form" method="post">
+              <div class="form-group bmd-form-group">
+                <label for="name" class="bmd-label-floating">Your name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group bmd-form-group">
+                <label for="exampleInputEmails" class="bmd-label-floating">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmails">
+                <span class="bmd-help">We'll never share your email with anyone else.</span>
+              </div>
+              <div class="form-group bmd-form-group">
+                <label for="phone" class="bmd-label-floating">Phone</label>
+                <input type="text" class="form-control" id="phone">
+              </div>
+              <div class="form-group label-floating bmd-form-group">
+                <label class="form-control-label bmd-label-floating" for="message"> Your message</label>
+                <textarea class="form-control" rows="6" id="message"></textarea>
+              </div>
+              <div class="submit text-center">
+                <input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% include "footer.html" %}

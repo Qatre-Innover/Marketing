@@ -1,0 +1,177 @@
+
+{% include "header.html" %}
+
+<body class="index-page sidebar-collapse">
+ <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href= "{{ url_for('home') }} ">
+          Marketing </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons" style = "font-size: 18px;">apps</i> Components
+            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="#customer-rfm " class="dropdown-item">
+                <i class="material-icons">layers</i> RFM Analysis
+              </a>
+              <a href="#stock-price " class="dropdown-item">
+                <i class="material-icons">content_paste</i> Stock Price
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href=" {{ url_for('contact') }} "  data-original-title="Contact us" rel="nofollow">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('../static/assets/img/Project-5.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand">
+            <h1>Marketing Analysis</h1>
+            <h3>Behavioral Segmentation of your customers made efficient.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main main-raised">
+    <div class="section section-basic">
+    <div class="section">
+      <div class="container ">
+
+        <div class="space-30"></div>  <!-- 30 px space -->
+
+    <div class="section section-examples" id = "customer-rfm">
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-md-6">
+            <a href=" {{ url_for('customerseg') }} ">
+              <img src="../static/assets/img/Project_.jpg" alt="Rounded Image" class="img-raised rounded img-fluid">
+            </a>
+          </div>
+          <div class="col-md-7">
+            <h3 style = "font-size: 30px;"><strong>Customer Behavior</strong></h3>
+            <div class="space-5"></div>
+            <!-- Tabs on Plain Card -->
+            <div class="card card-nav-tabs card-plain">
+              <div class="card-header card-header-danger">
+                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                <div class="nav-tabs-navigation">
+                  <div class="nav-tabs-wrapper">
+                    <ul class="nav nav-tabs" data-tabs="tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#about" data-toggle="tab">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#features" data-toggle="tab">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('customerseg') }}">Visit</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body ">
+                <div class="tab-content text-center">
+                  <div class="tab-pane active" id="about">
+                    <p style="font-size: 17px;">When trying to reach customers with a marketing message or ad campaign,
+                      targeting the right market with the right message is essential. Market segmentation can help you to target just the people most
+                      likely to become satisfied customers of your company or enthusiastic consumers of your content. Splitting up an audience in this
+                       way allows for more precisely targeted marketing and personalized content. </p>
+                  </div>
+                  <div class="tab-pane" id="features">
+                    <p style="font-size: 17px;"><strong>• RFM analysis:</strong> a Data driven customer behavior segmentation technique <br>
+                    	<strong>• KMeans Clustering:</strong> a <i>‘bottom-up’</i> approach under hierarchical clustering</p>
+                  </div>
+                  <div class="tab-pane" id="visit">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- End Tabs on plain Card -->
+          <div class="col-md-9" id = "stock-price">
+            <a href=" {{ url_for('home') }} ">
+              <img src="../static/assets/img/Project2_1.jpg" alt="Rounded Image" class="img-raised rounded img-fluid">
+            </a>
+          </div>
+          <div class="col-md-7">
+            <h3 style = "font-size: 30px;"><strong>Stock Price Behavior</strong></h3>
+            <div class="space-5"></div>
+            <!-- Tabs on Plain Card -->
+            <div class="card card-nav-tabs card-plain">
+              <div class="card-header card-header-danger">
+                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                <div class="nav-tabs-navigation">
+                  <div class="nav-tabs-wrapper">
+                    <ul class="nav nav-tabs" data-tabs="tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#About" data-toggle="tab">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Features" data-toggle="tab">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('home') }}">Visit</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body ">
+                <div class="tab-content text-center">
+                  <div class="tab-pane active" id="About">
+                    <p style="font-size: 17px;">Just knowing about market trends is nowhere enough, so we find out how the inclinations in market can profit us. Stock market prediction aims to determine the future movement of the stock value of a financial exchange. The accurate prediction of share price movement will lead to more profit investors can make. </p>
+                  </div>
+                  <div class="tab-pane" id="Features">
+                    <p style="font-size: 17px;"><strong>• Time Series Forecasting:</strong> to drive future strategic decision-making using statistical models like Auto ARIMA, LSTM-RNN</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- End Tabs on plain Card -->
+        </div>
+      </div>
+          </div>
+      </div>
+    <div class="sharing-area text-center">
+          <div class="row justify-content-center">
+            <img src="../static/assets/img/Teamwork.jpg" alt="Thank you" class="team img-raised">
+            <h3 style="font-size: 30px;"> <strong>Thank you for supporting us!</strong></h3>
+          </div>
+          <a id="twitter" class="btn btn-raised btn-twitter" href="" rel="nofollow">
+            <i class="fa fa-twitter"></i>
+            Tweet
+          </a>
+          <a id="github" href="https://github.com/Qatre-Innover" target="_blank" class="btn btn-raised btn-github" rel="nofollow">
+            <i class="fa fa-github"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+{% include "footer.html" %}
