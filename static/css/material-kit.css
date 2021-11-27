@@ -202,6 +202,56 @@ img {
   border-style: none;
 }
 
+.idform{
+  margin: auto;
+  text-align: center;
+  width: 300px;
+}
+
+.mx-sm-6 {
+  margin-left: auto !important;
+}  /* you can change the position of the card on the page from here, the margin was self given by me */
+
+.flip-card {
+background-color: transparent;
+width: 300px;
+height: 200px;
+
+}
+
+.flip-card-inner {
+position: absolute;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; 
+backface-visibility: hidden;
+}
+
+.flip-card-front {
+background-color: #22577A;
+color: black;
+}
+
+.flip-card-back {
+background-color: #38A3A5;
+color: white;
+transform: rotateY(180deg);
+}
+
+
 svg:not(:root) {
   overflow: hidden;
 }
@@ -19109,4 +19159,4 @@ footer .pull-center {
   }
 }
 
-/*# sourceMappingURL=kit-free.css.map */
+
