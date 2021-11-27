@@ -15607,7 +15607,7 @@ h2.title {
 }
 
 .nav-tabs .nav-item .material-icons {
-  margin: -1px 5px 0 0;
+  margin: -1px 15px 0 0;
 }
 
 .nav-tabs .nav-item .nav-link.active {
@@ -16925,6 +16925,10 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 .purple-filter:after {
   background: rgba(4, 7, 42, 0.64);
   }
+
+.grey-filter::after{
+  background: rgba(54, 34, 34, 0.83);
+}
 
 footer {
   padding: 0.9375rem 0;
