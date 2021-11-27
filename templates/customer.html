@@ -101,7 +101,7 @@
       </div>
     </div>
 
-    <hr><hr>
+    
     <!-- Forms -->
     <h1 class="h3 mb-3 fw-normal">Already a member of our privileged store?</h1>
     
@@ -109,10 +109,10 @@
       <form action="{{ url_for('user') }}" method="POST">
         <div class="form-floating">
           <label for="Id">Please enter you store Identification Number</label>
-          <input type="text" class="form-control" placeholder="ID Number" name="Id">
+          <input type="text" class="form-control" placeholder="ID Number" name="Id" autocomplete="off">
         </div>
         <div style="padding-top: 20px;">
-          <button type="submit" class="btn btn-outline-dark" style="background-color: black; ">Submit</button>
+          <button type="submit" class="btn btn-outline-dark" style="background-color: black;">Submit</button>
         </div>
       </form>    
     </div>
