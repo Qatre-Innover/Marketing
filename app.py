@@ -94,7 +94,7 @@ def user():
             return "Your Id is found."
         
         else:
-            return "NO ID found. Are you sure that you are a member?"
+            return "NO ID found. Become a Member, JOIN NOW!"
     
 
 # Driver Code.
