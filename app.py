@@ -68,7 +68,16 @@ pipe_preds = model.predict(data_new)
 print(pipe_preds)
 
 customer = pd.DataFrame({"ID": np.array(data.ID), "Cluster": np.array(pipe_preds)})
+tiers = {
+    0: 'Platinum',
+    1: 'Gold',
+    2: 'Silver',
+    3: 'Bronze'
+}
+
+customer["membership_tier"] = customer["Cluster"].replace(tiers)
 print(customer)
+
 
 # Flask app routes.
 @app.route("/")
@@ -91,10 +100,13 @@ def user():
         if id in np.array(data.ID):
             print("Customer ID is: ", id)
             print(data[(data.ID == id)])
-            return "Your Id is found."
+            tier = list(customer.membership_tier[( customer["ID"] == id )])[0]
+
+            return render_template("customer.html", tier = tier)
         
         else:
-            return "NO ID found. Become a Member, JOIN NOW!"
+            ans = -1
+            return render_template("customer.html", response = ans)
     
 
 # Driver Code.
