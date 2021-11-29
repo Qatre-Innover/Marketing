@@ -98,11 +98,21 @@ def user():
         id = request.form["Id"]
         id = int(id)
         if id in np.array(data.ID):
+            ans = 1
             print("Customer ID is: ", id)
-            print(data[(data.ID == id)])
             tier = list(customer.membership_tier[( customer["ID"] == id )])[0]
+            print(tier)
+            if tier == 'Platinum':
+                counter = 0
+            elif tier == 'Gold':
+                counter = 1
+            elif tier == 'Silver':
+                counter = 2
+            else:
+                counter = 3
+            opc = '50%'
 
-            return render_template("customer.html", tier = tier)
+            return render_template("customer.html", tier = tier, counter = counter, opc = opc, ans = ans)
         
         else:
             ans = -1

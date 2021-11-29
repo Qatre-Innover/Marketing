@@ -45,50 +45,29 @@
       </div> -->
 <div style="padding: 50px;">
 
-    <div>
-      <h1>Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
+    <div class="grid-container">
 
-    <div>
-
-        <div class="flip-card" style="width:500px;">
-          <div class="flip-card-inner">
-            <div class="flip-card-front card-body">
-              <h2 class="text-white text-center">About the Dataset</h2>
-           </div>
-          <div class="flip-card-back card-body">
-            <h4 class="text-white text-center"> <a href="https://www.kaggle.com/eshaansaraf/personality-segmentation">Visit Kaggle Notebook</a></h4>
-          </div>
-         </div>
-
+      <div class="grid-child purple">
+        <h1><strong>About Our Project</strong></h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>  
       </div>
-    </div>
-
-
-    <!-- <div style="width: 100%; display: table;">
-      <div style="display: table-row">
-          <div style="height: auto; display: table-cell;">
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-
-          <div style="height: auto; display: table-cell;">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front card-body">
-                  <h2 class="text-white text-center">About the Dataset</h2>
-               </div>
-              <div class="flip-card-back card-body">
-                <h4 class="text-white text-center"> <a href="https://www.kaggle.com/eshaansaraf/personality-segmentation">Visit Kaggle Notebook</a></h4>
-              </div>
+  
+      <div class="grid-child green">
+        <div>
+          <div class="flip-card" style="width:500px;">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card-body" style="background-image: url('../static/assets/img/datasetimg.jpg'); background-size: cover;">
+                <h2 class="text-white text-center"><strong>ABOUT OUR DATASET</strong></h2>
              </div>
-          </div>
-          </div>
+            <div class="flip-card-back card-body">
+              <h4 class="text-white text-center"> <a href="https://www.kaggle.com/eshaansaraf/personality-segmentation">Visit Kaggle Notebook</a></h4>
+            </div>
+           </div>
+        </div>
+        </div>
       </div>
-  </div> -->
-
-
+    
+  </div>
 
 
   <div class="section" id="carousel" style="padding-top: 0px;">
@@ -142,54 +121,59 @@
 
   </div>
 
-  <!-- <div class="row">
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-      </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-    </div>
 
-  </div> -->
+  <div class="card-deck" style="margin: auto;">
 
+    {% if counter!=0 %}
+    <div class="card mb-3" id="shadow-card1" style="background:#CBBCB1; opacity: {{ opc }};">
+      {% endif %}
+    {% if counter == 0 %}
+    <div class="card mb-3" id="shadow-card1" style="background:#CBBCB1;">
+      {% endif %}
 
-  <div class="card-deck">
-    <div class="card mb-3" style="background:#CBBCB1; max-width: 18rem;">
-    <div class="card-header text-white" style="background:#E2C2B9; font-size:15px;"><strong>Tier 0</strong></div>
+    <div class="card-header text-white cardtier" style="background:#E2C2B9;"><strong>Tier 0</strong></div>
       <div class="card-body">
         <h3 class="card-title">Platinum</h3>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
 
-    <div class="card mb-3" style="background:#FFCE45; max-width: 18rem;">
-      <div class="card-header text-white" style="background:#E5890A; font-size:15px;"><strong>Tier 1</strong></div>
+     {% if counter != 1 %} 
+    <div class="card mb-3" id="shadow-card2" style="background:#FFCE45; opacity: {{ opc }};">
+      {% endif %}
+     {% if counter == 1 %}
+     <div class="card mb-3" id="shadow-card2" style="background:#FFCE45;">
+      {% endif %}
+
+      <div class="card-header text-white cardtier" style="background:#E5890A;"><strong>Tier 1</strong></div>
       <div class="card-body">
         <h3 class="card-title">Gold</h3>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
       </div>
     </div>
 
-    <div class="card mb-3" style="background:#C8C6C6; max-width: 18rem;">
-      <div class="card-header text-white" style="background:#6D8299; font-size:15px;"><strong>Tier 2</strong></div>
+    {% if counter != 2 %} 
+    <div class="card mb-3" id="shadow-card3" style="background:#C8C6C6; opacity: {{ opc }};">
+      {% endif %}
+     {% if counter == 2 %}
+     <div class="card mb-3" id="shadow-card3" style="background:#C8C6C6;">
+      {% endif %}
+
+      <div class="card-header text-white cardtier" style="background:#6D8299;"><strong>Tier 2</strong></div>
       <div class="card-body">
         <h3 class="card-title">Silver</h3>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
       </div>
     </div>
 
-    <div class="card mb-3" style="background:#C06014; max-width: 18rem;">
-      <div class="card-header text-white" style="background:#F2BB7B; font-size:15px;"><strong>Tier 3</strong></div>
+    {% if counter != 3 %} 
+    <div class="card mb-3" id="shadow-card4" style="background:#C06014; opacity: {{ opc }};">
+      {% endif %}
+     {% if counter == 3 %}
+     <div class="card mb-3" id="shadow-card4" style="background:#C06014;">
+      {% endif %}
+    
+      <div class="card-header text-white cardtier" style="background:#F2BB7B;"><strong>Tier 3</strong></div>
       <div class="card-body">
         <h3 class="card-title">Bronze</h3>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -197,8 +181,6 @@
     </div>
 
   </div>
-
-
 
 </div>
 
