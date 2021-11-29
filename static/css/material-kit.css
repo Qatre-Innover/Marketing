@@ -11,7 +11,13 @@
   font-size: .875rem;
 }
 
-
+/* .bg-gradient-dark {
+  background-image: linear-gradient(195deg,#42424a,#191919);
+}
+.mask{
+  background-size: cover;
+  opacity: 0.8;
+} */
 *,
 *::before,
 *::after {
@@ -248,12 +254,30 @@ border-radius: 25px;
 }
 
 .flip-card-back {
-background-color: #38A3A5;
+background-color: grey;
 color: white;
 transform: rotateY(180deg);
 border-radius: 25px;
 }
 
+#card-img1 {
+  background-image: linear-gradient(to bottom, rgba(46, 26, 35, 0.781), rgba(54, 10, 23, 0.521)),
+  url('datasetimg.jpg');
+  background-size: cover;
+}
+
+#card-img2 {
+  background-image: linear-gradient(to top, rgba(36, 22, 28, 0.781), rgba(51, 24, 45, 0.521)),
+  url('aboutdata.jpg');
+  background-size: cover;
+}
+
+a:link{
+  color: white;
+}
+a:visited{
+  color: #1edafc;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 0fr;
@@ -17014,7 +17038,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   background: rgba(4, 7, 42, 0.64);
   }
 
-.grey-filter::after{
+.grey-filter::before{
   background: rgba(54, 34, 34, 0.83);
 }
 
