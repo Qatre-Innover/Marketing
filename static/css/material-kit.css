@@ -278,6 +278,9 @@ a:link{
 a:visited{
   color: #1edafc;
 }
+a:hover{
+  color:rgb(182, 41, 41);
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 0fr;
@@ -11741,7 +11744,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #89229b;
+  color: white;
   text-decoration: none;
 }
 
