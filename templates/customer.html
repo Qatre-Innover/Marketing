@@ -46,7 +46,12 @@
 
       <div class="grid-child purple">
         <h1><strong>About Our Project</strong></h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>
+          Customer Personality Analysis is a detailed analysis of a company’s ideal customers. It helps a business to better understand its customers and makes it easier for them to modify products according to the specific needs, behaviors and concerns of different types of customers. Where large MNCs are using this criteria very frequently, we aim to provide this benefit to every small business. 
+        </p>
+        <p>
+          For example, instead of spending money to market a new product to every customer in the company’s database, a company can analyse which customer segment is most likely to buy the product and then market the product only on that particular segment.
+        </p>
       </div>
 
       <div class="grid-child green">
@@ -57,9 +62,15 @@
                 <div class="container">
                   <h2 class="text-white text-center" style="font-size: 50px;"><strong>ABOUT OUR DATASET</strong></h2>
                 </div>
+                <h4 class="text-white text-center"> <a href="https://www.kaggle.com/imakash3011/customer-personality-analysis">Visit Kaggle</a></h4>
+
              </div>
              <div class="flip-card-back card-body" id="card-img2">
-              <h2 class="text-white text-center"> <a href="https://www.kaggle.com/eshaansaraf/personality-segmentation">Visit Kaggle Notebook</a></h2>
+               <p style="text-align: center; font-size: 20px;"> 
+                The dataset contains detailed information of the customers along with the all the purchasing data. Data is used to perform clustering to summarize customer segments.               
+                </p>
+                <h4 class="text-white text-center" style="padding-top: 73px;"> <a href="https://www.kaggle.com/imakash3011/customer-personality-analysis">Visit Kaggle</a></h4>
+
              </div>
            </div>
         </div>
@@ -105,25 +116,41 @@
 
 
     <!-- Forms -->
-    <h1 class="h3 mb-3 fw-normal text-center">Already a member of our privileged store?</h1>
-
-    <div class="idform">
-      <form action="{{ url_for('user') }}" method="POST">
-        <div class="form-floating">
-          <label for="Id">Please enter you store Identification Number</label>
-          <input type="text" class="form-control" placeholder="ID Number" name="Id" autocomplete="off">
-        </div>
-        <div style="padding-top: 20px;">
-          <button type="submit" class="btn btn-outline-dark" style="background-color: black;">Submit</button>
-        </div>
-      </form>
-    </div>
+    <table style="margin: auto;">
+      <tbody>
+        <tr>
+          <td>
+            <img src="../static/assets/img/business_woman.jpg" alt="person.img" style="height: 450px;">
+          </td>
+          <td>
+              <h1 class="h2 mb-3 fw-normal text-center">Already a member of our privileged store?</h1>
+               <div class="idform">
+                  <form action="{{ url_for('user') }}" method="POST">
+                   <div class="form-floating" style="text-align: left;">
+                      <label for="Id" style="font-size: 25px;">Please enter your store Identification Number</label>
+                      <input type="text" class="form-control" placeholder="ID Number" name="Id" autocomplete="off">
+                    </div>
+                    <div style="padding-top: 20px;">
+                     <button type="submit" class="btn btn-outline-dark" style="background-color: black;">Submit</button>
+                    </div>
+                 </form>
+               </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <!-- Form ends -->
 
   </div>
 
+  <section class="mx-n3 page_back">
+    <div style="margin: 0px auto;">
+      <a href="#tiers"><img class="scrolling" src="../static/assets/img/scroll2.gif" alt=""></a>
+    </div>
+  </section>
 
-  <div class="card-deck" style="margin: auto;">
+
+  <div class="card-deck" id="tiers" style="margin: auto;">
 
     {% if counter!=0 %}
     <div class="card mb-3" id="shadow-card1" style="background:#CBBCB1; opacity: {{ opc }};">

@@ -184,6 +184,10 @@ a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
 
+a:visited{
+  color: #1edafc;
+}
+
 pre,
 code,
 kbd,
@@ -211,7 +215,7 @@ img {
 .idform{
   margin: auto;
   text-align: center;
-  width: 300px;
+  width: fit-content;
 }
 
 .mx-sm-6 {
@@ -259,6 +263,7 @@ color: white;
 transform: rotateY(180deg);
 border-radius: 25px;
 }
+
 
 #card-img1 {
   background-image: linear-gradient(to bottom, rgba(46, 26, 35, 0.781), rgba(54, 10, 23, 0.521)),
@@ -1059,6 +1064,23 @@ mark,
   height: auto;
 }
 
+.page_back {
+  /* display: block; */
+  background-image: url("pattern.jpg");
+  margin: 0px -50.5px;
+  height: 250px;
+}
+
+.scrolling {
+  display: block;
+  margin: auto;
+  background: white;
+  height: 250px;
+}
+
+.scrolling:hover {
+  background-color: rgba(180, 180, 180, 0.979);
+}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -5083,6 +5105,7 @@ tbody.collapse.show {
 .card-deck {
   display: flex;
   flex-direction: column;
+  padding-top: 100px;
 }
 
 .card-deck .card {
