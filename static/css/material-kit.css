@@ -302,6 +302,39 @@ a:hover{
 }
 
 
+.shimmer {
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-top: 1px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(58, 57, 57)), to(rgba(71, 70, 70, 0.932)), 
+  color-stop(0.5, rgb(236, 229, 229)), color-stop(0.9, black));
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation-name: shimmer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+
+@keyframes shimmer {
+  0% {
+      background-position: top left;
+  }
+  50% {
+    background-position: top right;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+
 .cardtier {
   font-size: 18px;
   text-align: center;
@@ -4985,7 +5018,7 @@ tbody.collapse.show {
 }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   margin-bottom: 0;
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -17229,7 +17262,7 @@ footer .pull-center {
   padding: 1rem 15px;
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: -30px;
+  margin-top: -35px;
   border: 0;
   background: linear-gradient(60deg, #eee, #bdbdbd);
 }

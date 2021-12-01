@@ -110,7 +110,7 @@ def user():
                 counter = 2
             else:
                 counter = 3
-            opc = '45%'
+            opc = '40%'
 
             return render_template("customer.html", tier = tier, counter = counter, opc = opc, ans = ans)
         
