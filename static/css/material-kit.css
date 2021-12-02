@@ -297,6 +297,22 @@ a:hover{
   grid-gap: 20px;
 }
 
+.mycontainer1 {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  grid-gap: 20px;
+  padding: 20px 0px;
+}
+
+.mycontainer2 {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  grid-gap: 20px;
+  padding: 20px 0px;
+  text-align: right;
+}
+
+
 #shadow-card1 {
   box-shadow: 0 20px 20px rgba(0,0,0,0.19)
 }
@@ -395,7 +411,18 @@ a:hover{
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 6.5s;
+  animation-duration: 7s;
+}
+
+.img_display {
+  margin: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+.side_plots {
+  height: 200px;
+  width: 300px;
 }
 
 @keyframes fade {
@@ -1131,14 +1158,21 @@ mark,
   /* display: block; */
   background-image: url("pattern.jpg");
   margin: 0px -50.5px;
-  height: 250px;
+  height: 150px;
 }
 
 .scrolling {
   display: block;
   margin: auto;
   background: white;
-  height: 250px;
+  height: 150px;
+}
+
+.myplots {
+  margin: auto;
+  max-width: 1000px;
+  height: 400px;
+  object-position: center;
 }
 
 .scrolling:hover {
