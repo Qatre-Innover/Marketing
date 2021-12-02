@@ -302,6 +302,7 @@ a:hover{
   grid-template-columns: 0fr 1fr;
   grid-gap: 20px;
   padding: 20px 0px;
+  text-align: justify;
 }
 
 .mycontainer2 {
@@ -309,9 +310,24 @@ a:hover{
   grid-template-columns: 1fr 0fr;
   grid-gap: 20px;
   padding: 20px 0px;
-  text-align: right;
+  text-align: justify;
 }
 
+.customer_content {
+  padding: 10px 0px;
+  font-size: 22px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.compact_content {
+  max-width: 92%;
+  margin: auto;
+}
+
+.capital {
+  font-size: 40px;
+}
 
 #shadow-card1 {
   box-shadow: 0 20px 20px rgba(0,0,0,0.19)
@@ -397,7 +413,7 @@ a:hover{
 .dot {
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 115px 10px;
   background-color: rgba(17, 17, 17, 0.788);
   border-radius: 60%;
   display: inline-block;
@@ -450,11 +466,11 @@ a:hover{
   display: flex;
   width: 80vw;
   height: 80vh;
-  margin-top: 10vh;
-  margin-left: -10px;
-  margin-right: auto;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
+  max-height: 500px;
+  max-width: 900px;
 }
+
 .top ul
 {
   list-style: none;
@@ -1274,15 +1290,15 @@ mark,
 .page_back {
   /* display: block; */
   background-image: url("pattern.jpg");
-  margin: 0px -50.5px;
-  height: 150px;
+  margin: 40px -50.5px;
+  height: 50px;
 }
 
 .scrolling {
   display: block;
   margin: auto;
   background: white;
-  height: 150px;
+  height: 50px;
 }
 
 .myplots {
@@ -1292,9 +1308,6 @@ mark,
   object-position: center;
 }
 
-.scrolling:hover {
-  background-color: rgba(180, 180, 180, 0.979);
-}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -5319,7 +5332,7 @@ tbody.collapse.show {
 .card-deck {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  padding: 50px 0px;
 }
 
 .card-deck .card {
@@ -7991,6 +8004,42 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030;
 }
+
+.component{
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  width: 750px;
+  margin:0 auto;
+  padding: 3rem;
+}
+
+.component blockquote.quote {
+    position: relative; 
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 80%;  /* create space for the quotes */
+    color: #484748;
+    margin: 1rem auto 2rem;
+}
+.component blockquote.EN {
+    background:
+    linear-gradient(to right, #039be5 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, #039be5 4px, transparent 4px) 100% 0,
+    linear-gradient(to bottom, #039be5 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, #039be5 4px, transparent 4px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.component blockquote.DE {
+    background:
+    linear-gradient(to right, #039be5 4px, transparent 4px) 0% 0%,
+    linear-gradient(to bottom, #039be5 4px, transparent 4px) 0% 0%,
+    linear-gradient(to left, #039be5 4px, transparent 4px) 100% 100%,
+    linear-gradient(to top, #039be5 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+    
 
 @supports (position: sticky) {
   .sticky-top {
@@ -18678,7 +18727,7 @@ footer .pull-center {
 }
 
 .section {
-  padding: 70px 0;
+  padding: 70px 0px 0px;
 }
 
 .profile-page .page-header {
