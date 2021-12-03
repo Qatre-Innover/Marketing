@@ -46,8 +46,8 @@
 
       <div class="grid-container">
 
-        <div class="grid-child purple">
-          <h1><strong>About Our Project</strong></h1>
+        <div class="grid-child child-1">
+          <h1 class="h1"><strong>About Our Project</strong></h1>
           <p class="customer_content">
             Customer Personality Analysis is a detailed analysis of a company’s ideal customers.
             It helps a business to better understand its customers and makes it easier for them to modify products according to the specific needs, behaviors and concerns of different types of customers. Where large MNCs are using this criteria very
@@ -55,7 +55,7 @@
           </p>
         </div>
 
-        <div class="grid-child green">
+        <div class="grid-child child-2">
           <div>
             <div class="flip-card" style="width:500px;">
               <div class="flip-card-inner">
@@ -63,14 +63,14 @@
                   <div class="container">
                     <h2 class="text-white text-center" style="font-size: 50px;"><strong>ABOUT OUR DATASET</strong></h2>
                   </div>
-                  <h4 class="text-white text-center"> <a href="https://www.kaggle.com/imakash3011/customer-personality-analysis">Visit Kaggle</a></h4>
+                  <h4 class="text-white text-center"> <a href="https://www.kaggle.com/imakash3011/customer-personality-analysis">View Dataset</a></h4>
 
                 </div>
                 <div class="flip-card-back card-body" id="card-img2">
                   <p style="text-align: center; font-size: 20px;">
                     The dataset contains detailed information of the customers along with the all the purchasing data. Data is used to perform clustering to summarize customer segments.
                   </p>
-                  <h4 class="text-white text-center" style="padding-top: 73px;"> <a href="https://www.kaggle.com/imakash3011/customer-personality-analysis">Visit Kaggle</a></h4>
+                  <h4 class="text-white text-center" style="padding-top: 73px;"> <a href="https://www.kaggle.com/imakash3011/customer-personality-analysis">View Dataset</a></h4>
 
                 </div>
               </div>
@@ -86,7 +86,7 @@
           <!-- <div class="container"> -->
             <div class="top" style="margin: auto;">
                 <ul style="padding-left: 0px;">
-                    <li><a href="#img_1"><img src="../static/assets/img/plots/Children Status.png"></a></li>
+                      <li><a href="#img_1"><img src="../static/assets/img/plots/Children Status.png"></a></li>
                       <li><a href="#img_2"><img src="../static/assets/img/plots/Amount Spent on Gold.png"></a></li>
                       <li><a href="#img_3"><img src="../static/assets/img/plots/Amount Spent on Fish.png"></a></li>
                       <li><a href="#img_4"><img src="../static/assets/img/plots/Total spending vs Income.png"></a></li>
@@ -101,7 +101,7 @@
                       <li><a href="#img_13"><img src="../static/assets/img/plots/Spending habit.png"></a></li>
                       <li><a href="#img_14"><img src="../static/assets/img/plots/Family Size and Purchases Sum.png"></a></li>
                       <li><a href="#img_15"><img src="../static/assets/img/plots/Marital Status.png"></a></li>
-                      <li><a href="#img_16"><img src="../static/assets/img/plots/.png"></a></li>
+                      <li><a href="#img_16"><img src="../static/assets/img/plots-word.png"></a></li>
                   </ul>
                   <a href="#_7" class="lightbox trans" id="img_7"><img src="../static/assets/img/plots/Amount Spent on Fruits.png"></a>
                   <a href="#_2" class="lightbox trans" id="img_2"><img src="../static/assets/img/plots/Amount Spent on Gold.png"></a>
@@ -118,7 +118,7 @@
                   <a href="#_5" class="lightbox trans" id="img_5"><img src="../static/assets/img/plots/Age division.png"></a>
                   <a href="#_8" class="lightbox trans" id="img_8"><img src="../static/assets/img/plots/Income based on age group and parenting.png"></a>
                   <a href="#_4" class="lightbox trans" id="img_4"><img src="../static/assets/img/plots/Total spending vs Income.png"></a>
-                  <a href="#_16" class="lightbox trans" id="img_16"><img src="../static/assets/img/plots/.png"></a>
+                  <a href="#_16" class="lightbox trans" id="img_16"><img src="../static/assets/img/plots-word.png"></a>
               </div>
           <!-- </div> -->
 
@@ -245,7 +245,8 @@
             <div class="card-header text-white cardtier" style="background:#E2C2B9;"><strong>Tier 0</strong></div>
             <div class="card-body">
               <h3 class="shimmer">Platinum</h3>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">VIP Access <br>  Private Label Sales <br> Superior Customer Support <br> 
+                Free Shipping <br> Earn Cashbacks and Rewards </p>
             </div>
           </div>
 
@@ -259,7 +260,8 @@
               <div class="card-header text-white cardtier" style="background:#E5890A;"><strong>Tier 1</strong></div>
               <div class="card-body">
                 <h3 class="shimmer">Gold</h3>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"> Early access to Sales <br> Birthday Gift points <br> Customer Support <br>
+                  Free Shipping <br> Earn Cashbacks and Rewards</p>
               </div>
             </div>
 
@@ -273,21 +275,22 @@
                 <div class="card-header text-white cardtier" style="background:#6D8299;"><strong>Tier 2</strong></div>
                 <div class="card-body">
                   <h3 class="shimmer">Silver</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"> Early access to Sales <br> Birthday Gift points <br> Customer Support 
+                  <br> Free Shipping upto 5 orders <br> Earn Cashbacks and Rewards</p>
                 </div>
               </div>
 
               {% if counter != 3 %}
-              <div class="card mb-3" id="shadow-card4" style="background:#C06014; opacity: {{ opc }};">
+              <div class="card mb-3" id="shadow-card4" style="background:#c76f26de; opacity: {{ opc }};">
                 {% endif %}
                 {% if counter == 3 %}
-                <div class="card mb-3" id="shadow-card4" style="background:#C06014;">
+                <div class="card mb-3" id="shadow-card4" style="background:#c76f26de;">
                   {% endif %}
 
                   <div class="card-header text-white cardtier" style="background:#F2BB7B;"><strong>Tier 3</strong></div>
                   <div class="card-body">
                     <h3 class="shimmer">Bronze</h3>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"> Get Vouchers <br> Birthday Gift points <br> Customer Support <br> Free Shipping upto 3 orders <br> Earn Cashbacks and Rewards</p>
                   </div>
                 </div>
 
