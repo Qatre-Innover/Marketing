@@ -70,9 +70,9 @@ print(pipe_preds)
 customer = pd.DataFrame({"ID": np.array(data.ID), "Cluster": np.array(pipe_preds)})
 tiers = {
     0: 'Platinum',
-    1: 'Gold',
-    2: 'Silver',
-    3: 'Bronze'
+    2: 'Gold',
+    3: 'Silver',
+    1: 'Bronze'
 }
 
 customer["membership_tier"] = customer["Cluster"].replace(tiers)
@@ -105,11 +105,11 @@ def user():
             if tier == 'Platinum':
                 counter = 0
             elif tier == 'Gold':
-                counter = 1
-            elif tier == 'Silver':
                 counter = 2
-            else:
+            elif tier == 'Silver':
                 counter = 3
+            else:
+                counter = 1
             opc = '40%'
 
             return render_template("customer.html", tier = tier, counter = counter, opc = opc, ans = ans)
