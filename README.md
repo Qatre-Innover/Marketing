@@ -1,3 +1,6 @@
 # Supermarket Customer Segmentation
 Please refer to the link given below for the results.
-<a href="https://www.w3schools.com">Redirect from here</a>
+
+<hr>
+
+<a href="https://ieeexplore.ieee.org/document/9776834">Redirect from here</a>
